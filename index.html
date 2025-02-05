@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="large-container">    
+        <div class="container">
+            <div class="h1-box">
+                <h1>Weather Forecast</h1>
+             </div>          
+            <h2 id="weather-header1">Carmichael, CA</h2>
+            <h2 id="weather-header">Today</h2>
+            <div class="weather-box">
+                <div class="current" id="current-weather">
+                    <p id="date_now"></p>
+                    <p id="weekday_now"></p>
+                    <p id="temperature_now"></p>
+                    <p id="weather_condition_now"></p>
+                    <p id="day_night_now"></p>
+                    <img id="weather_image_now" alt="Current weather" width="50px"></img>
+                </div>
+                
+                <div class="tomorrow hidden" id="tomorrow-weather">
+                    <p id="date_tomorrow"></p>
+                    <p id="weekday_tomorrow"></p>
+                    <p id="temperature_tomorrow"></p>
+                    <p id="weather_condition_tomorrow"></p>
+                    <p id="day_night_tomorrow"></p>
+                    <img id="weather_image_tomorrow" alt="Current weather" width="50px"></img>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="container">
+            <button id="toggle-button">Tomorrow</button>            
+             <h2 id="weather-header-hourly" class="hidden">Hourly:</h2>
+            <div class="hourly hidden" id="today-hourly"></div>
+        </div>
+        <div class="container">
+            <button id="toggle-button-daily">Daily</button>
+            <h2 id="weather-header-daily" class="hidden">Daily:</h2>
+            <div class="weather-box row hidden" id="forecast"></div>
+        </div>
+     </div>
+     <script src="index.js"></script>
+    </body>
+</html> 

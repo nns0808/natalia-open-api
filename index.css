@@ -1,0 +1,135 @@
+.h1-box {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: #e8b88e;
+    border-radius: 10%;
+    padding: 5px;
+    width: 100%;
+    margin: 0 0 50px 0;
+    box-shadow: 0 0 10px rgba(219, 154, 154, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.h1-box h1 {
+    text-align: center;
+}
+
+h1 {
+    font-family: Triodion; 
+    color: rgba(54, 2, 149, 0.8);
+    font-size: 50px;
+    
+}
+
+p {
+    font-size: 15px;
+   
+}
+
+#weather-header1 {
+    color:rgba(82, 3, 228, 0.8);
+    font-size: 40px;
+}
+
+.large-container {
+    display: flex;
+    flex-direction: column; 
+    background-color: #f3d9d9;
+    max-width: 1000px;
+    margin:0 auto;
+    padding: 0;
+    border-radius: 20px;
+    border: 5px double #f6c5c5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: url('images/IMG_6117.jpg');
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 20px;
+
+}
+
+.weather-box {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e8b88e;
+}
+
+.weather-box .current  {
+    padding: 10px;
+    border-radius: 20px;
+    background-color:  rgba(225, 186, 146, 0.8);;
+}
+
+.weather-box .tomorrow {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #6eec7f;
+}
+
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    color:rgb(21, 2, 49)
+}
+
+.row div {
+    display: flex;
+    flex-direction: raw;
+    padding: 20px;
+    border-radius: 20px;
+    background-color:#8ef198;
+    font-size: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+#toggle-button,
+#toggle-button-daily {
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+    background-color:#8ef198;
+    border: 1px solid rgb(25, 10, 39);
+    cursor: pointer;
+    margin: 0 40px;
+    justify-content:space-around;   
+   }
+
+#toggle-button:hover,
+#toggle-button-daily:hover {
+    background-color:  rgba(250, 179, 180, 0.8);
+    }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: #94b2f4;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+   
+   }
+
+footer p {
+    text-align: center;
+}
+
+.forecast-item {
+    text-align: start;
+}
+
