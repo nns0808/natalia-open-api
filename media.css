@@ -1,0 +1,72 @@
+/* ✅ Mobile-Sized Devices (max-width: 600px) */
+@media (max-width: 600px) {
+    #forecast {
+        display: block;
+        /* flex-direction: column; */
+        align-items: center;
+        width: 100%;  /* Ensure the container uses the full width */
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+
+    .forecast-item {
+        width: 100%;  /* Ensure item fits within the container */
+        max-width: 50px; 
+        margin: 10px 0;  /* Prevent horizontal overflow */
+        padding: 12px;
+        border-radius: 15px;
+        text-align: center;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    .row {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        color:rgb(74, 28, 28)
+    }
+}
+
+
+/* ✅ Mobile & Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Ensure Forecast Container is Properly Sized */
+    #forecast {
+        display: flex;
+        flex-wrap: wrap;  /* Allows items to move to a new row */
+        justify-content: center; /* Centers items */
+        align-items: center;
+        width: 100%; /* Full width */
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-sizing: border-box; /* Ensures padding is included in the width */
+    }
+
+    .forecast-item {
+        width: 100%; /* Full width for the item */
+        max-width: 320px; /* Prevents items from being too wide */
+        margin: 10px 0; /* Centers item and adds margin */
+        padding: 12px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        box-sizing: border-box; /* Ensures padding doesn’t expand width */
+        word-wrap: break-word; /* Prevents text overflow */
+    }
+    .row {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+        color:rgb(74, 28, 28)
+    /* Remove Unwanted Horizontal Scrolling */
+    }
+}
